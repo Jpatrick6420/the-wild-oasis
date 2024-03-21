@@ -16,7 +16,6 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
     }
     return acc + cur.totalPrice;
   }, 0);
-  console.log(sales);
 
   const checkins = confirmedStays.length;
 

@@ -62,7 +62,6 @@ function SalesChart({ bookings, numDays }) {
     start: subDays(new Date(), numDays - 1),
     end: new Date(),
   });
-  console.log("bookings:", bookings);
 
   const data = allDates.map((date) => {
     return {
@@ -75,7 +74,7 @@ function SalesChart({ bookings, numDays }) {
         .reduce((acc, cur) => acc + cur.extraSales, 0),
     };
   });
-  console.log("data:", data);
+
   const colors = isDarkMode
     ? {
         totalSales: { stroke: "#4f46e5", fill: "#4f46e5" },
